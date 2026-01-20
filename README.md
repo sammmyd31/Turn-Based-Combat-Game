@@ -7,7 +7,7 @@ Each player selects **three Bots** from a total of **eight**, with every Bot hav
 
 The game should played **on a single computer**, with players alternating turns.
 
-Anything in this README that is in *italics* has not been implemented in the game and is subject to change.
+Anything in this README that is in *italics* has **not** been implemented in the game and is subject to change.
 
 ---
 
@@ -54,7 +54,7 @@ Represents the Bot’s overall stat strength and is used as a tie-breaker in tur
 | Type       | Effect |
 |------------|--------|
 | Pierce     | *Damages health directly* |
-| Laser      | *Increases target energy (10–30% of attacker’s Energy Capacity)* |
+| Laser      | *Increases target energy (10–30% of Energy Capacity)* |
 | Explosive  | *25% of damage dealt as AOE* |
 | Blunt      | Deals 25% more damage to armor |
 | Electric   | *Disables extra turns* |
@@ -145,7 +145,7 @@ Each Bot has **4 moves**, each with:
 
 ---
 
-#### Damage Over Time (DOT)
+#### Torture Effects (Damage Over Time)
 
 | Effect | Duration | Description |
 |------|----------|-------------|
@@ -204,7 +204,7 @@ Each Bot has **4 moves**, each with:
 |------|----------|-------------|
 | Coolant | 3 turns | Reduces energy by 20% each turn |
 | Target Lock | 2 turns | Increases accuracy by 50% |
-| Target Override | 2 turns | Redirects all single-target attacks |
+| Target Override | 2 turns | Directs all single-target attacks to self |
 
 ---
 
