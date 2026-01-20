@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af498b4f1dd1be42bb18b4c57980f24, type: 3}
+  m_Name: Voltaire
+  m_EditorClassIdentifier: 
+  id: 5
+  name: Voltaire
+  sprite: {fileID: 8989372979475377954, guid: e9c96113c622c30408ef2dc4d4af32d3, type: 3}
+  type: 1
+  health: 260
+  armorHealth: 200
+  strength: 515
+  speed: 350
+  energyCapactiy: 180
+  moves:
+  - name: Thunder Touch
+    energy: 40
+    cooldown: 2
+    selectedTarget: 1
+    actions:
+    - rid: 2260878521436733440
+  - name: Static Shock
+    energy: 37
+    cooldown: 3
+    selectedTarget: 2
+    actions:
+    - rid: 2260878521436733441
+    - rid: 2260878521436733442
+  - name: Miracle Lightning
+    energy: 62
+    cooldown: 5
+    selectedTarget: 6
+    actions:
+    - rid: 2260878521436733513
+  - name: Electric Burst
+    energy: 36
+    cooldown: 2
+    selectedTarget: 1
+    actions:
+    - rid: 2260878521436733443
+    - rid: 2260878521436733444
+    - rid: 2260878521436733445
+  references:
+    version: 2
+    RefIds:
+    - rid: 2260878521436733440
+      type: {class: DamageAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 1
+        attackPower: 55
+        damageType: 5
+    - rid: 2260878521436733441
+      type: {class: DamageAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 2
+        attackPower: 25
+        damageType: 5
+    - rid: 2260878521436733442
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 2
+        statusEffectBase: {fileID: 11400000, guid: 19051d38be4944641bbc3acd844ec6a0, type: 2}
+    - rid: 2260878521436733443
+      type: {class: DamageAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 1
+        attackPower: 35
+        damageType: 5
+    - rid: 2260878521436733444
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 1
+        statusEffectBase: {fileID: 11400000, guid: 5eaad706a5aa9ae4d8580fc721aea95f, type: 2}
+    - rid: 2260878521436733445
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 1
+        statusEffectBase: {fileID: 11400000, guid: 7fd9a1e8accd4564b94cdc4c9f9491f3, type: 2}
+    - rid: 2260878521436733513
+      type: {class: ReviveAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 6
+        healthPercentage: 1
+        armorPercentage: 0

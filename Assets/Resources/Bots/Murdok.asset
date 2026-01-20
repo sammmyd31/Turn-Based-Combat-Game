@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af498b4f1dd1be42bb18b4c57980f24, type: 3}
+  m_Name: Murdok
+  m_EditorClassIdentifier: 
+  id: 4
+  name: Murdok
+  sprite: {fileID: -790993898976242301, guid: 2e23acdcbf681c248aff9bceef091519, type: 3}
+  type: 0
+  health: 310
+  armorHealth: 280
+  strength: 240
+  speed: 290
+  energyCapactiy: 60
+  moves:
+  - name: Heat Burst
+    energy: 26
+    cooldown: 1
+    selectedTarget: 1
+    actions:
+    - rid: 601454467767337034
+    - rid: 601454467767337035
+  - name: Energy Wave
+    energy: 33
+    cooldown: 3
+    selectedTarget: 2
+    actions:
+    - rid: 601454467767337036
+    - rid: 601454467767337037
+    - rid: 601454467767337038
+  - name: Total Corruption
+    energy: 50
+    cooldown: 4
+    selectedTarget: 2
+    actions:
+    - rid: 601454467767337039
+  - name: Enhance
+    energy: 38
+    cooldown: 3
+    selectedTarget: 4
+    actions:
+    - rid: 601454467767337040
+    - rid: 601454467767337041
+    - rid: 601454467767337042
+  references:
+    version: 2
+    RefIds:
+    - rid: 601454467767337034
+      type: {class: DamageAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 1
+        attackPower: 55
+        damageType: 6
+    - rid: 601454467767337035
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 1
+        statusEffectBase: {fileID: 11400000, guid: 7fd9a1e8accd4564b94cdc4c9f9491f3, type: 2}
+    - rid: 601454467767337036
+      type: {class: DamageAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 2
+        attackPower: 30
+        damageType: 2
+    - rid: 601454467767337037
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 2
+        statusEffectBase: {fileID: 11400000, guid: 19051d38be4944641bbc3acd844ec6a0, type: 2}
+    - rid: 601454467767337038
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 2
+        statusEffectBase: {fileID: 11400000, guid: 90a72d7d6539baf43bf37b17c87d60f9, type: 2}
+    - rid: 601454467767337039
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 2
+        statusEffectBase: {fileID: 11400000, guid: 95147aa0cd259ad4d9a01f5a5fdccd52, type: 2}
+    - rid: 601454467767337040
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 4
+        statusEffectBase: {fileID: 11400000, guid: df6d32afb097cc147909fac7f110e440, type: 2}
+    - rid: 601454467767337041
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 4
+        statusEffectBase: {fileID: 11400000, guid: 6db5fec17b7c1264facf94bd927a4172, type: 2}
+    - rid: 601454467767337042
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 4
+        statusEffectBase: {fileID: 11400000, guid: 40e2a0f200ac2704f8643588da08019f, type: 2}

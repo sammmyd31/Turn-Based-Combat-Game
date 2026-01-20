@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e400442a99b47a042a2f7d87b69c671b, type: 3}
+  m_Name: Damage Boost
+  m_EditorClassIdentifier: 
+  effectName: Damage Boost
+  turns: 3
+  type: 0
+  armorPercentChange: 0
+  standardPercentChange: 0
+  healthPercentChange: 0
+  energyPercentChange: 0
+  accuracyPercentChange: 0
+  damagePercentChange: 0.5
+  coolChange: 0
+  blockDamage: 0
+  healMultiplier: 0
+  blockAllEffects: 0
+  blockNegativeEffects: 0
+  blockPositiveEffects: 0
+  skipTurn: 0
+  directAttacks: 0
+  randomMove: 0

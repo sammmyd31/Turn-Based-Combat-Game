@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af498b4f1dd1be42bb18b4c57980f24, type: 3}
+  m_Name: EEGL
+  m_EditorClassIdentifier: 
+  id: 3
+  name: EEGL
+  sprite: {fileID: 5489907848166629572, guid: af75c671a11b3a24783a545d006289b1, type: 3}
+  type: 3
+  health: 260
+  armorHealth: 410
+  strength: 175
+  speed: 470
+  energyCapactiy: 90
+  moves:
+  - name: Ram
+    energy: 22
+    cooldown: 1
+    selectedTarget: 1
+    actions:
+    - rid: 601454467767336960
+    - rid: 601454467767336961
+  - name: Aerial Assault
+    energy: 55
+    cooldown: 4
+    selectedTarget: 2
+    actions:
+    - rid: 601454467767337029
+    - rid: 601454467767337030
+  - name: Eagle Eye
+    energy: 42
+    cooldown: 2
+    selectedTarget: 3
+    actions:
+    - rid: 601454467767337031
+    - rid: 601454467767337032
+  - name: System Breach
+    energy: 38
+    cooldown: 3
+    selectedTarget: 2
+    actions:
+    - rid: 601454467767337033
+  references:
+    version: 2
+    RefIds:
+    - rid: 601454467767336960
+      type: {class: DamageAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 1
+        attackPower: 45
+        damageType: 4
+    - rid: 601454467767336961
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 1
+        statusEffectBase: {fileID: 11400000, guid: 19051d38be4944641bbc3acd844ec6a0, type: 2}
+    - rid: 601454467767337029
+      type: {class: DamageAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 2
+        attackPower: 20
+        damageType: 3
+    - rid: 601454467767337030
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 2
+        statusEffectBase: {fileID: 11400000, guid: 7bef7844aa23a46439e5827fa64dce80, type: 2}
+    - rid: 601454467767337031
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 3
+        statusEffectBase: {fileID: 11400000, guid: 32e3f574a922b8d47afbf43c9cd69c34, type: 2}
+    - rid: 601454467767337032
+      type: {class: ExtraTurnAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 3
+    - rid: 601454467767337033
+      type: {class: StatusEffectAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetType: 2
+        statusEffectBase: {fileID: 11400000, guid: f6041776003a3f8429a84e37ca106064, type: 2}
