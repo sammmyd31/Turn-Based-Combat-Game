@@ -9,6 +9,8 @@ The game should played **on a single computer**, with players alternating turns.
 
 Anything in this README that is in *italics* has **not** been implemented in the game and is subject to change.
 
+[https://sammmyd.itch.io/turn-based-combat-game](Play on itch.io)
+
 ---
 
 ## Game Information
